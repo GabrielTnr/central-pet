@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Palanquin:wght@300&family=Patua+One&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Castoro", serif;
+}
+
+body {
+    background-color: #241337;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+nav {
+    width: 14vw;
+    height: 16vh;
+}
+
+nav p {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: "Patua one", serif;
+}
+
+nav img {
+    width: 70px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 77px;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imagem {
+    padding: 30px;
+    margin-right: 110px;
+}
+
+.login img {
+    width: 65px;
+    height: auto;
+}
+
+.login {
+    display: flex;
+    flex-direction: column; /* Altere de 'column' para 'row' para alinhar os elementos na horizontal */
+    align-items: center;
+    width: 620px;
+    justify-content: center; /* Alinhe os elementos horizontalmente */
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row; /* Define um layout de linha para cada linha de inputs */
+    margin-bottom: 10px; /* Adicione uma margem entre as linhas */
+}
+
+.login .input-box {
+    position: relative;
+    display: flex; /* Adicione isso para alinhar os campos de entrada horizontalmente */
+    margin: 0 10px; /* Adicione margens para separar os elementos */
+}
+
+.login #input-box-02 {
+    position: relative;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.input-box input {
+    flex: 1; /* Faça os campos de entrada ocuparem o espaço disponível horizontalmente */
+    width: auto; /* Defina a largura de auto para que os campos de entrada ajustem seu tamanho automaticamente */
+    height: 100%;
+    border-radius: 50px;
+    background-color: #6731b3;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    padding: 20px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px
+}
+
+.login .btn {
+    width: 100%;
+    height: 45px;
+    background-color: #ffdb53;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.login .btn:hover {
+    color: #ffdb53;
+    background-color: black;
+}
+
+.register {
+    padding: 5px;
+    text-decoration-color: black;
+}
+
+.register p a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-weight: 400;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+/* Ocultar o "olho" no campo de senha */
+input[type="password"]::-webkit-password-reveal-button {
+    display: none;
+}

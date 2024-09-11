@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Palanquin:wght@300&family=Patua+One&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #241337;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textoAmarelo {
+    color: #ffdb53;
+    font-family: "Patua one", serif;
+    font-size: 5rem;
+}
+
+main p {
+    color: #ffffff;
+    font-family: "Patua one", serif;
+    font-size: 4rem;
+    white-space: pre-line;
+}
+
+button {
+    background-color: #ffffff;
+    color: #6731b3;
+    font-family: "Patua one", serif;
+    font-size: 3rem;
+    border: none;
+    border-radius: 3rem;
+    width: 33rem;
+    height: 5.5rem;
+    margin-top: 2rem;
+}
+
+button:hover {
+    transition: 280ms;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd84b;
+    height: 12vh;
+}
+
+footer p {
+    font-size: 1.5rem;
+    font-family: "Patua one", serif;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="shortcut icon" href="../Imagens/logo-amarela.png">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Central Pet</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <section class="primeiraSeçaoHeader">
+        <figure>
+          <img src="../Imagens/logo-amarela.png" alt="Imagem da Logo" />
+        </figure>
+        <p>Central Pet</p>
+      </section>
+      <section class="segundaSeçaoHeader">
+        <ul class="listaBotoesNav">
+          <a href="#seçaoInformaçoes">
+            <li><button>Informações</button></li>
+          </a>
+          <a href="#seçaoSobreNos">
+            <li><button>Sobre Nós</button></li>
+          </a>
+          <a href="../PHP/create-account.php">
+            <li><button>Cadastro</button></li>
+          </a>
+          <a href="../PHP/login.php">
+            <li><button>Login</button></li>
+          </a>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <main>
+    <section class="primeiraSeçaoMain">
+      <article class="artigoTextoPrimeiraSeçao">
+        <p class="paragrafoBranco">
+          Protegendo os pets,
+          Educando os donos e
+          Transformando vidas
+        </p>
+        <p class="fraseAmarela">JUNTE-SE A NOSSA COMUNIDADE</p>
+        <ul class="listaBotoesPrimeiraSeçao">
+          <a href="../PHP/create-account.php">
+            <li><button class="botaoRoxo">Comece agora mesmo</button></li>
+          </a>
+          <li><button class="botaoBranco">Nossos serviços</button></li>
+        </ul>
+      </article>
+      <article class="artigoImagensPrimeiraSeçao">
+        <figure>
+          <img class="imgVeterinario" src="../Imagens/veterinario-com-gato.png"
+            alt="Veterinário fazendo carinho em um gato" />
+          <img class="imgPrancheta" src="../Imagens/prancheta.png" alt="Prancheta preenchida com funções do site" />
+        </figure>
+      </article>
+    </section>
+    <section id="seçaoInformaçoes" class="segundaSeçaoMain">
+      <article class="artigoTextoSegundaSeçao">
+        <h1 class="tituloRoxo">
+          Cuide, Ame e Respeite,
+          Seu pet merece o melhor!
+        </h1>
+        <p class="paragrafoItalico">
+          Na Central Pet, cuidamos do bem-estar dos pets, educamos os donos e
+          criamos um mundo onde todos os animais são tratados com amor e respeito.
+          Junte-se a nós nessa jornada de carinho e responsabilidade.
+        </p>
+      </article>
+      <article class="artigoImagensSegundaSeçao">
+        <div class="caixaImagens" id="caixa1">
+          <img src="../Imagens/img-main1.png" alt="Mulher fazendo carinho no seu cachorro" />
+          <div class="caixaSobreposta">
+            <div class="caixaTextos">
+              <h1>Registre seu Bichinho ➔</h1>
+              <p>Crie perfis personalizados para seus animais de estimação,
+                incluindo nome, raça, idade e etc. Permitindo que os veterinários
+                obtenham informações valiosas sobre seu(s) pet(s).</p>
+              <a href="../PHP/create-account.php">
+                <button class="botaoImagens">Acesse Já</button>]
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="caixaImagens" id="caixa2">
+          <img src="../Imagens/img-main2.png" alt="Veterinária cuidando de um gato" />
+          <div class="caixaSobreposta">
+            <div class="caixaTextos">
+              <h1>Agende sua Consulta ➔</h1>
+              <p>Provemos aos donos de pets a
+                facilidade de marcar consultas
+                tanto presencialmente como online. Com um sistema de
+                agendamento conveniente, simples e acessível.</p>
+              <a href="../HTML/agendamento.html">
+                <button class="botaoImagens">Acesse Já</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="caixaImagens" id="caixa3">
+          <img src="../Imagens/img-main3.png" alt="Celular recebendo mensagens" />
+          <div class="caixaSobreposta">
+            <div class="caixaTextos">
+              <h1>Comunidade Online ➔</h1>
+              <button class="botaoImagens">Em breve</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="seçaoSobreNos" class="terceiraSeçaoMain">
+      <div>
+        <p>
+          <span class="tituloSobreNos">Sobre Nós ➔</span>
+
+          Na Central Pet, nosso objetivo é promover o bem-estar dos
+          animais de estimação e tornar o mundo um lugar melhor para
+          eles. Fundada por amantes de animais comprometidos com a
+          causa, nossa plataforma tem como objetivo fornecer informações
+          confiáveis, recursos valiosos e uma rede de apoio para donos
+          de pets, veterinários e todos que compartilham o amor pelos
+          animaiszinhos.
+
+          Junte-se a nós nesta missão e faça parte de uma comunidade
+          que valoriza cada patinha, cauda e ronronar.
+
+        </p>
+        <a href="../PHP/create-account.php"><button class="botaoAcesseJa">Acesse Já</button></a>
+      </div>
+      <figure>
+        <img src="../Imagens/veterinaria-com-cachorro.png" alt="Imagem da Logo" />
+      </figure>
+    </section>
+  </main>
+  <script>
+
+    window.sr = ScrollReveal({ reset: true });
+
+    ScrollReveal().reveal('#caixa1', {
+      duration: 2500,
+      origin: '.paragrafoItalico',
+      rotate: { x: 80, y: 0, z: 0 },
+      distance: '200px',
+    });
+    ScrollReveal().reveal('#caixa2', {
+      duration: 2750,
+      origin: '.paragrafoItalico',
+      rotate: { x: 80, y: 0, z: 0 },
+      distance: '200px'
+    });
+    ScrollReveal().reveal('#caixa3', {
+      duration: 3000,
+      origin: '.paragrafoItalico',
+      rotate: { x: 80, y: 0, z: 0 },
+      distance: '200px'
+    });
+
+  </script>
+  <footer>
+    <p>Central Pet © 2023</p>
+  </footer>
+  <script src="../JS/script-index.js"></script>
+</body>
+
+</html>

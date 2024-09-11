@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Palanquin:wght@300&family=Patua+One&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Castoro", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #241337;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16vh;
+}
+
+nav img {
+    width: 70px;
+}
+
+.primeiraSeçaoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22vw;
+}
+
+nav p {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: "Patua one", serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 48vw;
+    height: 16vh;
+}
+
+nav ul button {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: none;
+}
+
+nav button:hover {
+    transition: 280ms;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+nav button:not(:hover) {
+    transition: 280ms;
+}
+
+.primeiraSeçaoMain {
+    background-color: #241337;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 85vh;
+    
+}
+
+.artigoTextoPrimeiraSeçao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45vw;
+    margin-left: 1rem;
+    margin-bottom: 6.5rem;
+}
+
+.paragrafoBranco {
+    color: #ffffff;
+    font-size: 3.5rem;
+    white-space: pre-line;
+    text-align: left;
+}
+
+.fraseAmarela {
+    color: #ffdb53;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    height: 6rem;
+}
+
+.listaBotoesPrimeiraSeçao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 30vw;
+}
+
+.botaoRoxo {
+    color: #ffffff;
+    background-color: #6731b3;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 3rem;
+    width: 19rem;
+    height: 3.5rem;
+}
+
+.botaoBranco {
+    color: #6731b3;
+    background-color: #ffffff;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 3rem;
+    width: 14rem;
+    height: 3.5rem;
+}
+
+.botaoRoxo:hover {
+    transition: 280ms;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.botaoRoxo:not(:hover) {
+    transition: 280ms;
+}
+
+.botaoBranco:hover {
+    transition: 280ms;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.botaoBranco:not(:hover) {
+    transition: 280ms;
+}
+
+.artigoImagensPrimeiraSeçao {
+    width: 42vw;
+    height: 60vh;
+}
+
+.imgVeterinario {
+    width: 24vw;
+    height: 50vh;
+}
+
+.imgPrancheta {
+    width: 16vw;
+    height: 38vh;
+}
+
+.segundaSeçaoMain {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 85vh;
+}
+
+.artigoTextoSegundaSeçao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    white-space: pre-line;
+    height: 45vh;
+}
+
+.tituloRoxo {
+    color: #401a74;
+    font-size: 3rem;
+	font-family: "Patua one", serif;
+}
+
+.paragrafoItalico {
+    color: rgb(172, 172, 172);
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.artigoImagensSegundaSeçao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#caixa1, #caixa2, #caixa3 {
+    visibility: hidden;
+}
+
+.caixaImagens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65vh;
+    position: relative;
+    width: 16vw;
+    height: 42vh;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.caixaImagens img {
+    width: 16vw;
+    height: 42vh;
+}
+
+.caixaSobreposta {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-color: #241337;
+    color: #ffffff;
+    border-radius: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.caixaSobreposta:hover {
+    opacity: 1;
+}
+
+.caixaSobreposta > * {
+    transform: translateX(-20px);
+    transition: transform 0.25s;
+}
+
+.caixaSobreposta:hover > * {
+    transform: translateX(0);
+}
+
+.caixaTextos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixaTextos h1{
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.caixaTextos p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    white-space: pre-line;
+}
+
+.botaoImagens {
+    background-color: #ffffff;
+    color: #6731b3;
+    font-family: "Patua one", serif;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 3rem;
+    width: 14rem;
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+.botaoImagens:hover {
+    transition: 280ms;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.terceiraSeçaoMain {
+    background-color: #241333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 70vh;
+}
+
+.terceiraSeçaoMain .tituloSobreNos {
+    color: #ffdb53;
+    font-family: "Patua one", serif;
+    font-size: 3rem;
+}
+
+.terceiraSeçaoMain p {
+    color: #ffffff;
+    white-space: pre-line;
+    font-size: 1.5rem;
+}
+
+.terceiraSeçaoMain img {
+    width: 450;
+    height: 500px;
+}
+
+.botaoAcesseJa {
+    background-color: #ffffff;
+    color: #6731b3;
+    font-family: "Patua one", serif;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 3rem;
+    width: 19rem;
+    height: 3.5rem;
+    margin-bottom: 2rem;    
+}
+
+.botaoAcesseJa:hover {
+    transition: 280ms;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.botaoAcesseJa:not(:hover) {
+    transition: 280ms;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd84b;
+    height: 12vh;
+}
+
+footer p {
+    font-size: 1.5rem;
+    font-family: "Patua one", serif;
+}
+
+@media (width <= 420px) {
+    nav img {
+        width: 6vw;
+    }
+
+    .primeiraSeçaoHeader {
+        width: 30vw;
+    }
+
+    nav p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        width: 64vw;
+    }
+
+    .segundaSeçaoHeader button {
+        font-size: 0.75rem;
+    }
+
+    .primeiraSeçaoMain {
+        height: 45vh;
+    }
+
+    .paragrafoBranco {
+        font-size: 1.3rem;
+        width: 56vw;
+    }
+
+    .fraseAmarela {
+        font-size: 0.8rem;
+        width: 58vw;
+        height: 6vh;
+    }
+
+    .listaBotoesPrimeiraSeçao {
+        width: 54vw;
+    }
+
+    .botaoRoxo {
+        font-size: 0.75rem;
+        width: 6rem;
+        height: 2.75rem;
+    }
+
+    .botaoBranco {
+        font-size: 0.75rem;
+        width: 7rem;
+        height: 2.75rem;
+    }
+
+    .artigoImagensPrimeiraSeçao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgVeterinario {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    .imgPrancheta {
+        width: 32vw;
+        height: 24vh;
+        margin-left: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .tituloRoxo {
+        font-size: 1.5rem;
+    }
+
+    .paragrafoItalico {
+        font-size: 0.65rem;
+    }
+
+    .segundaSeçaoMain {
+        height: 65vh;
+    }
+
+    .caixaImagens {
+        width: 28vw;
+        height: 30vh;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .caixaImagens img {
+        width: 28vw;
+        height: 30vh;
+        border-radius: 2rem;
+    }
+
+    .caixaTextos h1 {
+        font-size: 0.875rem;
+        margin-top: 1rem;
+    }
+
+    .caixaTextos p {
+        font-size: 0.425rem;
+    }
+
+    .caixaTextos button{
+        font-size: 0.65rem;
+        margin-top: 0.5rem;
+        width: 4rem;
+        height: 1.5rem;
+    }
+
+    .terceiraSeçaoMain {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50vh;
+    }
+
+    .terceiraSeçaoMain .tituloSobreNos {
+        font-size: 1.5rem;
+    }
+
+    .terceiraSeçaoMain p {
+        font-size: 0.75rem;
+    }
+
+    .terceiraSeçaoMain img {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .terceiraSeçaoMain button {
+        font-size: 1rem;
+        width: 12rem;
+        height: 2.5rem;
+    }
+    footer {
+        height: 8vh;
+    }
+
+    footer p {
+        font-size: 0.875rem;
+    }
+}

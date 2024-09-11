@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Palanquin:wght@300&family=Patua+One&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Castoro", serif;
+}
+
+/* nav-bar */
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #241337;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16vh;
+}
+
+nav img {
+    width: 70px;
+}
+
+.primeiraSeçaoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22vw;
+}
+
+nav p {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: "Patua one", serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 48vw;
+    height: 16vh;
+}
+
+nav ul button {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: none;
+}
+
+nav button:hover {
+    transition: 280ms;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+nav button:not(:hover) {
+    transition: 280ms;
+}
+
+/* introdução ao agendamento */
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 80px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-left: 80px;
+    width: 370px;
+    border: 2px solid #241337;
+    text-align: left;
+    border-radius: 30px;
+    padding: 30px 40px;
+}
+
+.card h1 {
+    color: #ffdb53;
+    margin-bottom: 15px;
+}
+
+
+/* SESSÃO DE AGENDAMENTO */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    background-color: #6731B3;
+    border: 1px solid black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.arrow i {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.arrow:hover {
+    background-color: #50268b;
+}
+
+.agendamento {
+    /*     display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 80px auto;
+    width: 1000px;
+    border: 2px solid #241337;
+    border-radius: 30px;
+    padding: 30px 40px;
+}
+
+tr {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+td {
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.desable {
+    background-color: yellow;
+}
+
+.trans {
+    background-color: #474747;
+}
+
+td:hover {
+    background-color: aquamarine;
+}
+
+.selected {
+    background-color: yellow; /* Cor de fundo quando selecionado */
+}
+
+
+#mesAtual {
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* botões */
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    padding: 7px;
+    background-color: #6731B3;
+    border-radius: 10px;
+    margin: 5px;
+    border: 1px solid;
+    font-weight: bolder;
+}
+
+.cancelar  {
+    background-color: #ffffff;
+    border: 1px solid #241337;
+}
+
+button:hover {
+    background-color: #50268b;
+}
+
+.cancelar:hover {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    height: 8vh;
+}
+
+footer p {
+    font-size: 0.875rem;
+}

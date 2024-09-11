@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Palanquin:wght@300&family=Patua+One&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #241337;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16vh;
+}   
+
+nav img {
+    width: 3vw;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 48vw;
+    height: 16vh;
+}
+
+nav ul button {
+    color: #ffffff;
+    background-color: transparent;
+    font-family: "Castoro", serif;
+    font-size: 1.5rem;
+    border: none;
+}
+
+nav button:hover {
+    transition: 280ms;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
+nav p {
+    color: #ffffff;
+    font-family: "Patua one", serif;
+    font-size: 2rem;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 12vw;
+    height: 6vh;
+    margin-left: 6rem;
+}
+
+.primeiraSeçaoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22vw;
+}
+
+.primeiraSeçaoHeader:hover {
+    transition: 280ms;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+body {
+    background-color: #241337;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seçaoFormulario {
+    background-color: #ffffff;
+    width: 90vw;
+    height: 80vh;
+    border-radius: 3rem;
+}
+
+main .figuraIcone {
+    background-color: #ffdb53;
+    border-radius: 3rem;
+    width: 10vw;
+    height: 20vh;
+}
+
+main img {
+    border-radius: 8rem;
+}
+
+.figuraPatas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    margin-top: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.figuraPatas img {
+    width: 3vw;
+    border-radius: 0;
+}
+
+.figuraIcone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixasMain .caixaAmarela {
+    background-color: #ffdb53;
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 6vh;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+}
+
+.caixaAmarela p {
+    margin-left: 1rem;
+}
+
+#ultimaCaixa {
+    margin-bottom: 0rem;
+}
+
+.caixasMain {
+    font-size: 1.4rem;
+    font-family: "Castoro", serif;
+    display: flex;
+    justify-content:  space-evenly;
+    align-items: center;
+}
+
+.caixaEsquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    height: 60vh;
+}
+
+.caixaDireita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    height: 60vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd84b;
+    height: 10vh;
+    margin-top: 2.4rem;
+}
+
+footer p {
+    font-size: 1.5rem;
+    font-family: "Patua one", serif;
+}
+
+@media (width <= 420px) {
+
+    nav img {
+        width: 12vw;
+    }
+
+    nav p {
+        font-size: 2rem;
+    }
+
+    a {
+        width: 56vw;
+    }
+
+    header a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        height: 62vh;
+        border-radius: 1.5rem;
+    }
+
+    .caixasMain {
+        height: 48vh;
+    }
+
+    .figuraPatas img {
+        width: 3.75vw;
+    }
+    
+    .figuraIcone {
+        width: 4vw;
+    }
+
+    .caixasMain .tituloCaixa {
+        font-size: 0.65rem;
+    }
+
+    .caixasMain .caixaAmarela {
+        height: 1.5rem;
+    }
+}
